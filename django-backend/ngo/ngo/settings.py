@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+p-%h@9ar1mp0%f&u(=w_s5@2u28djp!_dut*%)g^=xzr8dcky
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    # 'drf_yasg',
 ]
 
 MIDDLEWARE = [
+        "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,10 +132,19 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',
-    ]
+    ],
+    'DEFAULT_RENDERER_CLASSES':('rest_framework.renderers.JSONRenderer',)
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+]
+TIME_ZONE = 'Asia/Kolkata'
 
-# AUTH_USER_MODEL = 'blog.CustomUser'
+USE_I18N = True
+
+USE_TZ = True
+
+AUTH_USER_MODEL = 'blog.CustomUser'
