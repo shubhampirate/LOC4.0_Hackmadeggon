@@ -1,15 +1,17 @@
 import React, { useState,useEffect } from "react";
-import logo from "./logo.jpeg" 
+
 import { Link } from "react-router-dom";
 import axios from "axios";
 
 function signin() {
     return (
     <div>
-      <div className="relative w-full h-screen bg-no-repeat bg-cover"  style={{backgroundImage: "url(https://cdn.weashare.com/wp-content/uploads/2020/05/payment-gateway-nulled-demo-680x350.png)"}}>
+      <div className="relative w-full h-screen bg-no-repeat bg-cover"  style={{backgroundImage: "url(https://www.hdnicewallpapers.com/Walls/Big/Abstract/Natural_Sea_Abstract_5K_Blur_Wallpaper.jpg)"}}>
         <div className="border-black flex justify-center items-center h-full">
           <form className="max-w-[400px] w-full mx-auto bg-white p-8">
-          <div className="h-15"><img classname="h-10" src={logo}/></div>
+            <h2 className="text-4xl font-bold text-center py-4">NGO</h2>
+           
+         
             <div className="flex flex-col mb-2">
               <label>E-mail</label>
               <input

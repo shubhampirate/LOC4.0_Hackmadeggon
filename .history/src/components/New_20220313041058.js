@@ -10,14 +10,11 @@ function New() {
         <div className="bg-white relative w-full height-7xl flex">
           
         <div className=" text-2xl w-full height-7xl flex">
-        <div className="h-13 "><Link to="/new"> <img classname="h-10" src={logo}/> </Link></div>
+        <div className="h-13 "><img classname="h-10" src={logo}/></div>
           </div>
-         <div className="">
-          <Link to="/">
-            <button className="outline-black text-4xl shadow-black pt-3 pr-20"> Logout</button>
-          </Link>
+          <div className="flex pr-5 pt-10">
+        <Avatar />
           </div>
-         
           </div>
           {/* <div className="text-4xl text-center italic">We are here to help You give the society a chance to smile <MoodIcon/></div>
           <div className="pt-12">
@@ -39,7 +36,7 @@ function New() {
           </button>
           </Link>
           <hr />
-          <div className="">
+          <div className=""><Link className="hover:text-black" to="/booking">
           <button className="h-screen  shadow-lg  hover:shadow-slate-300 bg-no-repeat bg-cover "  style={{backgroundImage: "url(https://www.palomar.edu/sociology/wp-content/uploads/sites/108/2016/02/iStock_000082683071_Medium-volunteer-photo.jpg)"}}>
            
             <p className="justify-start text-2xl">Individuals who willingly devote their time, effort, and skill are known as volunteers.
@@ -48,7 +45,7 @@ Promotion and raising funds, administrative responsibilities, and team initiativ
 crowdfunding platforms can make an enormous difference for the social sector entrepreneurs and their poverty alleviation, healthcare, and other activities on the ground. In fact, it has been proven globally that NGO fundraising gets a huge shot when it is done through crowdfunding platforms.</p>
           </button>
           </Link>
-          </div>
+          </div><Link className="hover:text-black" to="/blogging">
           <button className="h-screen  shadow-lg hover:shadow-slate-300 bg-no-repeat bg-cover" style={{backgroundImage: "url(https://www.threegirlsmedia.com/wp-content/uploads/2017/07/3G.BloggingDosAndDonts.7.23.2017.jpg)"}} > 
              
              
@@ -70,13 +67,13 @@ Building an online presence might sound daunting, at first. And trust me to some
             </div>
             <div className='p-4 flex flex-col justify-around'>
                 <form>
-                <Link className="hover:text-black" to="/listofngo">
-                    
-                       <h1 className='text-5xl italic text-center'>Fundraisers</h1>  <p className="text-3xl justify-between">Donors and Companies in nearly every country in the world. 
+                   
+                    <div>
+                    <Link to="/bookingslot">     <h1 className='text-5xl italic text'>Fundraisers</h1>  <p className="text-3xl">Donors and Companies in nearly every country in the world. 
                 This crowdfunding platform helps organizations access the tools, training, and support they need to be more effective and help their communities.
-                 This is a secure and trusted platform to raise money.</p>
-                 </Link>
-                    
+                 This is a secure and trusted platform to raise money.</p> </Link>
+                    </div>
+                   
                 </form>
              </div>
         </div>
@@ -85,13 +82,11 @@ Building an online presence might sound daunting, at first. And trust me to some
         <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
             <div className='p-4 flex flex-col justify-around'>
                 <form>
-                <Link className="hover:text-black" to="/booking">
-                <h1 className='text-5xl italic text-center'>Volunteers</h1>  <p className="text-2xl justify-between">Individuals who willingly devote their time, effort, and skill are known as volunteers.
-
-Promotion and raising funds, administrative responsibilities, and team initiatives are all examples of these responsibilities.
-crowdfunding platforms can make an enormous difference for the social sector entrepreneurs and their poverty alleviation, healthcare, and other activities on the ground. In fact, it has been proven globally that NGO fundraising gets a huge shot when it is done through crowdfunding platforms.</p>
                    
-                   </Link>
+                    <div>
+                    <Link to="/bookingslot">   <h1 className='text-5xl italic'>Workshops</h1>  </Link>
+                    </div>
+                   
                 </form>
              </div>
              <div className='w-full h-[550px] hidden md:block'>
@@ -107,17 +102,32 @@ crowdfunding platforms can make an enormous difference for the social sector ent
             </div>
             <div className='p-4 flex flex-col justify-around'>
                 <form>
-                <Link className="hover:text-black" to="/blogging">
-                <h1 className='text-5xl italic text-center'>Blogging</h1>  <p className="text-2xl justify-between">The Internet is valuable when extending the reach of your Non-for-Profit Organization. Developing your online presence can share your Nonprofit's mission with those beyond your local community and provide information about your cause.
-Building an online presence might sound daunting, at first. Maintaining a blog page will help you accomplish this daunting task. Determine what goal you’d like to accomplish through your blog. Then, develop content accordingly that pushes you along that path.</p>
                    
-                  </Link>
+                    <div>
+                    <Link to="/bookingslot"><h1 className='text-5xl italic'>Awareness Drives</h1>  </Link>
+                    </div>
                    
                 </form>
              </div>
         </div>
     </div>
-   
+    <div className='w-full h-screen flex'>
+        <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
+          
+            <div className='p-4 flex flex-col justify-around'>
+                <form>
+                   
+                    <div>
+                    <Link to="/bookingslot">   <h1 className='text-5xl italic'>Educational Drives </h1> </Link> 
+                    </div>
+                   
+                </form>
+             </div>
+             <div className='w-full h-[550px] hidden md:block'>
+                <img className='w-full h-full' src="https://iacharity.uk/wp-content/uploads/2020/05/jordan.jpg" alt="/" />
+            </div>
+        </div>
+    </div>
       </div>
 
    

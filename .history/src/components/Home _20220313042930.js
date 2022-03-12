@@ -13,8 +13,8 @@ function Home () {
           <div className="h-15"><img classname="h-10" src={logo}/></div>
      </div>
      <div className="flex ">
-     <button className="pr-10 text-3xl"><Link to="/signin">User Signin </Link></button>
-     <button className=" pl-10 pr-10 text-3xl"><Link to="/signup">User Signup</Link></button>
+     <button className="pr-10 text-5xl"><Link to="/signin">User Signin </Link></button>
+     <button className=" pl-10 pr-10 text-5xl"><Link to="/signup">User Signup</Link></button>
      </div>
      </div>
      <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>

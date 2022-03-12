@@ -34,9 +34,8 @@ function Blogging() {
                 value={markdown}
                 onChange={(e) => setMarkdown(e.target.value)}
               ></textarea>
-              <Link to="/new">
                <button className="w-28 py-2 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white rounded-lg"onClick={()=>{ alert('Thank You for Posting inspirational Work Thank You!'); }}> Post It</button>
-               </Link></section>
+            </section>
           </div>
           <div className="pt-0 flex flex-col justify-around">
             <article className="h-10 whitespace-normal">

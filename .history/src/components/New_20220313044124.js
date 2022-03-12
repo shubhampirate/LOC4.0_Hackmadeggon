@@ -14,7 +14,7 @@ function New() {
           </div>
          <div className="">
           <Link to="/">
-            <button className="outline-black text-4xl shadow-black pt-3 pr-20"> Logout</button>
+            <button className="outline-black text-4xl shadow-black pt-5 pr-20"> Logout</button>
           </Link>
           </div>
          

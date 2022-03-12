@@ -10,14 +10,16 @@ function New() {
         <div className="bg-white relative w-full height-7xl flex">
           
         <div className=" text-2xl w-full height-7xl flex">
-        <div className="h-13 "><Link to="/new"> <img classname="h-10" src={logo}/> </Link></div>
+        <div className="h-13 "><img classname="h-10" src={logo}/></div>
           </div>
          <div className="">
           <Link to="/">
-            <button className="outline-black text-4xl shadow-black pt-3 pr-20"> Logout</button>
+            <button className="border"> Logout</button>
           </Link>
           </div>
-         
+          <div className="flex pr-5 pt-10">
+        <Avatar />
+          </div>
           </div>
           {/* <div className="text-4xl text-center italic">We are here to help You give the society a chance to smile <MoodIcon/></div>
           <div className="pt-12">

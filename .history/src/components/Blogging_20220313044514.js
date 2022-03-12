@@ -13,18 +13,15 @@ function Blogging() {
           <img classname="items-center" src={logo} />
         </div>
       </div>
-      <div className="text-center pr-20 text-4xl italic">
-        {" "}
-        Start writing Your Blog
-      </div>
+      <div className="text-center pr-20 text-4xl italic"> Start writing Your Blog</div>
       <hr />
       <hr />
-      <hr />
+      <hr/>
       <div className="w-full h-screen flex">
         <div className="grid grid-cols-1 md:grid-cols-2 m-auto h-[384px] shadow-lg shadow-gray-600 sm:max-w-[900px]">
           <div className="w-full h-[550px] hidden md:block">
             <section className="markdown">
-              <textarea
+            <textarea
                 className="h-14 w-96"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
@@ -34,18 +31,16 @@ function Blogging() {
                 value={markdown}
                 onChange={(e) => setMarkdown(e.target.value)}
               ></textarea>
-              <Link to="/new">
-               <button className="w-28 py-2 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white rounded-lg"onClick={()=>{ alert('Thank You for Posting inspirational Work Thank You!'); }}> Post It</button>
-               </Link></section>
+            </section>
+            <button className="">Post it </button>
           </div>
           <div className="pt-0 flex flex-col justify-around">
-            <article className="h-10 whitespace-normal">
+          <article className="h-10 whitespace-normal">
               <ReactMarkdown>{title}</ReactMarkdown>
             </article>
             <article className="h-96 whitespace-normal">
               <ReactMarkdown>{markdown}</ReactMarkdown>
             </article>
-           
           </div>
         </div>
       </div>
