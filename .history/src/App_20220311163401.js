@@ -1,15 +1,20 @@
-import Signin from './components/Signin'
-import Signup from "./components/Signup";
+
+import "./App.css";
+import { FcGoogle } from "react-icons/fc";
+import { AiFillFacebook } from "react-icons/ai";
+import Signin from './components/signin'
+import signup from "./components/signup";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import New from "./components/New"
-import Sidebar from "./components/Sidebar"
+import Home from "./components/Home"
 function App() {
   return <div>
-      <div >
-      <New/>
-     <Sidebar/>
-
-      </div>
+      <Router>
+          <Routes>
+            <Route path="" element={Home}/>
+            <Route path="/" element={signup} />       
+          </Routes>
+      <Signin/>
+      </Router>
   </div>;
 }
 

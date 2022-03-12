@@ -2,12 +2,12 @@ import Signin from './components/Signin'
 import Signup from "./components/Signup";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import New from "./components/New"
-import Sidebar from "./components/Sidebar"
+//import Sidebar from "./components/Sidebar"
 function App() {
   return <div>
       <div >
       <New/>
-     <Sidebar/>
+     
 
       </div>
   </div>;

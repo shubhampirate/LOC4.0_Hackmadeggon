@@ -1,15 +1,17 @@
-import Signin from './components/Signin'
-import Signup from "./components/Signup";
+import Signin from './components/signin'
+import Signup from "./components/signup";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import New from "./components/New"
-import Sidebar from "./components/Sidebar"
 function App() {
   return <div>
-      <div >
-      <New/>
-     <Sidebar/>
-
-      </div>
+      <Router>
+      <Signin/>
+          <Routes>
+            <Route path="/home" element={<New/>}/>
+            <Route path="/signup" element={<Signup/>} />       
+          </Routes>
+      
+      </Router>
   </div>;
 }
 
