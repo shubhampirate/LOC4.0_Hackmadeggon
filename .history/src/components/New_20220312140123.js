@@ -1,0 +1,40 @@
+import React from 'react'
+import MenuIcon from "@mui/icons-material/Menu";
+import {Avatar, IconButton } from '@mui/material';
+import NotificationsIcon from "@mui/icons-material/Notifications";
+
+function New() {
+  return (
+    <div>
+        <div className="bg-white relative w-full height-7xl flex">
+          <div className="pl-5">
+          <IconButton>
+          <MenuIcon />
+          
+        </IconButton>
+        </div>
+        <div className="justify-center text-2xl w-full height-7xl flex">
+            NGO
+          </div>
+          <div className="flex pr-5 ">
+          <IconButton>
+          <NotificationsIcon />
+        </IconButton>
+        <Avatar/>
+          </div>
+          </div>
+          <div className="">
+            <h1>crowdfunding</h1>
+              <p>donors and companies in nearly every country in the world. This crowdfunding platform helps organizations access the tools, training, and support they need to be more effective and help their communities. This is a secure and trusted platform to raise money.</p>
+          </div>
+          <div className="">
+            volunteers
+          </div>
+          <div className="">
+
+          </div>
+    </div>
+  )
+}
+
+export default New
