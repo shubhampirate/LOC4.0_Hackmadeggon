@@ -35,20 +35,20 @@ class RegisterAPI(GenericAPIView):
 
 
 class LoginAPI(GenericAPIView):
-	
-	serializer_class = LoginSerializer
-	
-	def post(self,request,*args,**kwargs ):
-		username = request.data.get('username',None)
-		password = request.data.get('password',None)
-		doc_code = request.data.get('doc_code',None)
-		if password:
-			user = authenticate(username = username, password = password)
-		if user :
-			login(request,user)
-			token = Token.objects.get(user=user)
-			return Response({'token' : token.key,'username' : user.username},status = status.HTTP_200_OK)
-		return Response('Invalid Credentials',status = status.HTTP_404_NOT_FOUND)
+    serializer_class = LoginSerializer
+    def post(self,request,*args,**kwargs ):
+        username = request.data.get('email',None)
+        password = request.data.get('password',None)
+        # user = authenticate(email = username, password = password)
+        user = CustomUser.objects.get(email=username, password=password)
+        print(user)
+        if user :
+            login(request,user)
+            token = Token.objects.get(user=user)
+            print(token)
+            return Response({'token' : token.key,'email' : user.email},status = status.HTTP_200_OK)
+
+        return Response('Invalid Credentials',status = status.HTTP_404_NOT_FOUND)
 
 
 @api_view(['GET', 'POST'])
@@ -61,9 +61,10 @@ def room_list(request, format=None):
         return Response(serializer.data)
 
     elif request.method == 'POST':
+        user = request.user
         serializer = RoomSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(host =user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -99,9 +100,10 @@ def booking_list(request, format=None):
         return Response(serializer.data)
 
     elif request.method == 'POST':
+        user = request.user
         serializer = BookingSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(user = user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -112,7 +114,7 @@ def booking_list(request, format=None):
 def user_list(request, format=None):
     if request.method == 'GET':
         snippets = CustomUser.objects.all()
-        serializer = LoginSerializer(snippets, many=True)
+        serializer = UserSerializer(snippets, many=True)
         return Response(serializer.data)
 
     elif request.method == 'POST':

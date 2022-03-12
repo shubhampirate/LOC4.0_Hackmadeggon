@@ -3,19 +3,25 @@ from .models import *
 
 
 class LoginSerializer(serializers.ModelSerializer):
-    # password=serializers.CharField(max_length=32,min_length=8,write_only = True)
+    password=serializers.CharField(max_length=32,min_length=8,write_only = True)
+    class Meta:
+        model = CustomUser
+        # fields = ['name']
+        fields = ['username','password']
+
+class UserSerializer(serializers.ModelSerializer):
+    password=serializers.CharField(max_length=32,min_length=8,write_only = True)
     class Meta:
         model = CustomUser
         # fields = ['name']
         fields = '__all__'
-
 
 class RegisterSerializer(serializers.ModelSerializer):
 	password=serializers.CharField(max_length=32,min_length=8,write_only = True)
 	
 	class Meta:
 		model = CustomUser
-		fields = ['username','password']
+		fields = '__all__'
 	
 	def create(self,validated_data):
             validated_data['is_active'] = True
