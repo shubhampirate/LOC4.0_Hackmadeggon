@@ -22,7 +22,7 @@ function Blogging() {
           <div className="w-full h-[550px] hidden md:block">
             <section className="markdown">
             <textarea
-                className="h-14 w-96"
+                className="h-16 w-96"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               ></textarea>

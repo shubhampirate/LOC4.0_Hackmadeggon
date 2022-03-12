@@ -15,14 +15,12 @@ function Blogging() {
       </div>
       <div className="text-center pr-20 text-4xl italic"> Start writing Your Blog</div>
       <hr />
-      <hr />
-      <hr/>
       <div className="w-full h-screen flex">
         <div className="grid grid-cols-1 md:grid-cols-2 m-auto h-[384px] shadow-lg shadow-gray-600 sm:max-w-[900px]">
           <div className="w-full h-[550px] hidden md:block">
             <section className="markdown">
             <textarea
-                className="h-14 w-96"
+                className="h-16 w-96"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               ></textarea>

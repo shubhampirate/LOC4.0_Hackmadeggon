@@ -9,7 +9,7 @@ function Booking() {
      <div className="items-center pl-56 ml-80">
         <div className="h-13 "><img classname="items-center" src={logo}/></div>
         </div>
-        
+        }
     <div className='w-full h-screen flex'>
         <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
         <div className='w-full h-[550px] hidden md:block'>
