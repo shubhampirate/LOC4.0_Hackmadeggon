@@ -55,7 +55,7 @@ function Booking() {
                 <form>
                    
                     <div>
-                    <Link to="/bookingslot">   <h1 className='text-5xl italic'>Workshops</h1>  </Link>
+                       <h1 className='text-5xl italic'>Workshops</h1> 
                     </div>
                    
                 </form>
@@ -75,7 +75,7 @@ function Booking() {
                 <form>
                    
                     <div>
-                    <Link to="/bookingslot"><h1 className='text-5xl italic'>Awareness Drives</h1>  </Link>
+                       <h1 className='text-5xl italic'>Awareness Drives</h1> 
                     </div>
                    
                 </form>
@@ -89,7 +89,7 @@ function Booking() {
                 <form>
                    
                     <div>
-                    <Link to="/bookingslot">   <h1 className='text-5xl italic'>Educational Drives </h1> </Link> 
+                       <h1 className='text-5xl italic'>Educational Drives </h1> 
                     </div>
                    
                 </form>

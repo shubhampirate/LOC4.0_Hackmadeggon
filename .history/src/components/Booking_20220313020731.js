@@ -1,0 +1,63 @@
+import React from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Avatar, IconButton } from "@mui/material";
+import {Link} from "react-router-dom" 
+function Booking() {
+  return (
+    <div>
+      <div className="bg-white relative w-full height-7xl flex">
+        <div className="pl-5">
+        <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>
+        <div className='hidden sm:block'>
+            <h1 className="text-5xl text-center">NGO </h1> <hr />
+            <div className="text-left text-3xl pl-10"><Link to="/payment">1. Akshara Centre </Link></div><hr />
+            <div className="text-left text-3xl pl-10"><Link to="/payment"> 2.  ALERT-INDIA Association Rehabilitation Treatment </Link></div> <hr />
+            <div className="text-left text-3xl pl-10"><Link to="/payment">  3.  Annamrita-ISKCON Food Relief Foundation</Link></div> <hr />
+            <div className="text-left text-3xl pl-10"><Link to="/payment"> 4.  Antarang Foundation  </Link></div> <hr />
+            <div className="text-left text-3xl pl-10"><Link to="/payment"> 5.  Ashadeep Association </Link></div> <hr/>
+
+                    </div>
+        </div>
+        <div className=' flex flex-col justify-between'>
+          <h1 className='text-5xl text-left'>SERVICES </h1><hr />
+          <div className="text-3xl ">Education</div><hr />
+          <div className="text-3xl">Health</div> <hr />
+          <div className="text-3xl">Children</div> <hr />
+          <div className="text-3xl">Education</div> <hr/>
+          <div className="text-3xl">Children</div> <hr />
+    
+       
+        </div>
+        </div>
+        {/* <div className="justify-center text-5xl w-full height-7xl flex">
+          NGO
+        </div>
+        <div className="flex pr-5 ">
+          <Avatar />
+        </div>
+      </div>
+      <div className="flex justify-evenly ">
+        <div className="flex justify-center pt-10 text-5xl "><Link to="/bookingslot">          <button className="pr-20 shadow-lg box-order text-right h-56 w-80  justify-self-end">Seminars</button>
+        </Link>
+
+        </div>
+        <div className="flex justify-center pt-10 pl-10 text-5xl box-order  h-56 w-96 ">
+          <button className="pl-10 shadow-lg">Workshops</button>
+        </div>
+      </div>
+      <div className="flex justify-evenly text-center ">
+        <div className="flex justify-center pt-10 pl-20 text-5xl box-order text-right h-56 w-80 ">
+          <button className="pr-20 shadow-lg ">Awareness Drives</button>
+        </div>
+        <div className="flex justify-center pt-10 pr-10 text-5xl">
+          <button className="pl-10 shadow-lg">Education</button>
+        </div>
+      </div> */}
+</div>
+
+
+      </div>
+  );
+}
+
+export default Booking;

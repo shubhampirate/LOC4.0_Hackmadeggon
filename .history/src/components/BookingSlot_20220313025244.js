@@ -1,7 +1,10 @@
 import React from "react";
-import {Link} from "react-router-dom"
+
 function BookingSlot() {
-    
+    var Hello = React.createClass({
+        myClick: function () {
+            alert("Hello World!");
+        },
   return (
     <div>
       <div
@@ -37,7 +40,7 @@ function BookingSlot() {
               <label>Date </label>
               <input
                 className="border relative bg-gray-100 p-2"
-                type="date"
+                type="date "
               />
             </div>
             <div className="pt-2"></div>
@@ -45,16 +48,14 @@ function BookingSlot() {
               <label>Time </label>
               <input
                 className="border relative bg-gray-100 p-2"
-                type="time"
+                type="date"
               />
             </div>
             <div className="pt-0"></div>
-            <Link to="/new">
-            <button className="w-full py-2 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white"  onClick={()=>{ alert('Your Slot has been Booked You will be notified before Seminar'); }}>
-              {" "}  
+            <button className="w-full py-2 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white" onClick={this.myClick}>
+              {" "} 
               Book Slot
             </button>
-            </Link>
           </form>
         </div>
       </div>

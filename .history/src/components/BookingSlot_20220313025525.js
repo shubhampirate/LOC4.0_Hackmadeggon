@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+
 function BookingSlot() {
     
   return (
@@ -49,12 +49,10 @@ function BookingSlot() {
               />
             </div>
             <div className="pt-0"></div>
-            <Link to="/new">
             <button className="w-full py-2 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white"  onClick={()=>{ alert('Your Slot has been Booked You will be notified before Seminar'); }}>
-              {" "}  
+              {" "} 
               Book Slot
             </button>
-            </Link>
           </form>
         </div>
       </div>
