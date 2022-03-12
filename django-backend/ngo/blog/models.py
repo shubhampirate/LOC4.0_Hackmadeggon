@@ -36,14 +36,13 @@ class UserManager(BaseUserManager):
 
 class CustomUser(AbstractUser):
     username=None
-
     # extra fields
     email = models.EmailField(("Email Address"),primary_key=True)
     phone = models.BigIntegerField(default=976934295)
     pincode = models.IntegerField(default=00000)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS=[]
+    REQUIRED_FIELDS=['phone']
 
     objects = UserManager()
 
@@ -56,22 +55,6 @@ class CustomUser(AbstractUser):
         return token
 
 
-# class CustomUser(AbstractUser):
-#     name = models.CharField(max_length=200, null=True, default='abc')
-#     email = models.EmailField(null=True, default='abc@gmail.com')
-#     # username = models.CharField(max_length = 50, blank = True, null = True, default='abc')
-#     # USERNAME_FIELD = 'email'
-#     REQUIRED_FIELDS = []
-    
-#     @property
-#     def token(self):
-#         token = Token.objects.get(user=CustomUser.objects.get(self.id))
-#         return token
-
-#     def __str__(self):
-#         return self.name
-
-# '{"id":"1","name":"shubham","email":"shubham@gmail.com"}'
 class Topic(models.Model):
     name = models.CharField(max_length=200)
     def __str__(self):
