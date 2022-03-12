@@ -5,12 +5,11 @@ import New from "./components/New"
 import Booking from "./components/Booking"
 import Payment from "./components/Payment"
 import Home from './components/Home ';
-import BookingSlot from "./components/BookingSlot"
 //import Sidebar from "./components/Sidebar"
 function App() {
   return <div>
       <div >
-      <BookingSlot />
+      <Booking />
            </div>
   </div>;
 }

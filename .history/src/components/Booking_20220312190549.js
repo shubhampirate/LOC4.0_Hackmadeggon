@@ -10,7 +10,7 @@ function Booking() {
             <MenuIcon />
           </IconButton>
         </div>
-        <div className="justify-center text-5xl w-full height-7xl flex">
+        <div className="justify-center text-2xl w-full height-7xl flex">
           NGO
         </div>
         <div className="flex pr-5 ">
@@ -33,13 +33,8 @@ function Booking() {
           <button className="pl-10 shadow-lg">Education</button>
         </div>
       </div>
-
-
-
-      <div className="">
-
       </div>
-      </div>
+   
   );
 }
 

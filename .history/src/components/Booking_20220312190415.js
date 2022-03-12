@@ -10,14 +10,14 @@ function Booking() {
             <MenuIcon />
           </IconButton>
         </div>
-        <div className="justify-center text-5xl w-full height-7xl flex">
+        <div className="justify-center text-2xl w-full height-7xl flex">
           NGO
         </div>
         <div className="flex pr-5 ">
           <Avatar />
         </div>
       </div>
-      <div className="flex justify-evenly ">
+      <div className="flex justify-center ">
         <div className="flex justify-center pt-10 text-5xl ">
           <button className="pr-20 shadow-lg box-order text-right h-56 w-80  justify-self-end">Seminars</button>
         </div>
@@ -25,21 +25,16 @@ function Booking() {
           <button className="pl-10 shadow-lg">Workshops</button>
         </div>
       </div>
-      <div className="flex justify-evenly text-center ">
-        <div className="flex justify-center pt-10 pl-20 text-5xl box-order text-right h-56 w-80 ">
-          <button className="pr-20 shadow-lg ">Awareness Drives</button>
+      <div className="flex justify-center ">
+        <div className="flex justify-center pt-10 pl-20 text-5xl box-order text-right h-56 w-80">
+          <button className="pr-20 shadow-lg">Awareness Drives</button>
         </div>
         <div className="flex justify-center pt-10 pr-10 text-5xl">
           <button className="pl-10 shadow-lg">Education</button>
         </div>
       </div>
-
-
-
-      <div className="">
-
       </div>
-      </div>
+   
   );
 }
 
