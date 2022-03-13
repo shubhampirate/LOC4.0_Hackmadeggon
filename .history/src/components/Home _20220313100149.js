@@ -40,7 +40,7 @@ function Home () {
     </div>
 
     
-    <div className="bg-cyan-100 pt-5 pb-20 rounded-3xl">
+    <div className="bg-cyan-200 pt-5 pb-20 rounded-3xl">
       <h1 className='text-7xl text-center italic
       '>Our Vision</h1>
       <p className='text-2xl italic'>To create, maintain and grow digital and physical infrastructure which serves as bridge between non profit organisations and their donors.
