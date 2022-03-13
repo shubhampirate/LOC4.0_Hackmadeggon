@@ -1,0 +1,132 @@
+import React from 'react'
+import MenuIcon from "@mui/icons-material/Menu";
+import {Avatar, IconButton } from '@mui/material';
+import { Link } from 'react-router-dom';
+import logo from "./logo.jpeg"
+import MoodIcon from '@mui/icons-material/Mood';
+function New() {
+  return (
+    <div>
+        <div className="bg-white relative w-full height-7xl flex">
+          
+        <div className=" text-2xl w-full height-7xl flex">
+        <div className="h-13 "><Link to="/new"> <img classname="h-10" src={logo}/> </Link></div>
+          </div>
+         <div className="pr-10">
+          <Link to="/">
+            <button className="w-28 py-2 mt-8 bg-black hover:bg-gray-600 relative text-white rounded-lg "> Logout</button>
+          </Link>
+          </div>
+         
+          </div>
+          {/* <div className="text-4xl text-center italic">We are here to help You give the society a chance to smile <MoodIcon/></div>
+          <div className="pt-12">
+            .
+          <div className=" italic flex justify-between bg-yellow-200  text-5xl">
+            <div className="pl-12 ">Fundraisers</div>
+            <div className="pr-20">Volunteers</div>
+            <div className="pl-20 pr-20 px-20">Blogging</div>
+          </div>
+        <div  className="flex   ">
+          <div className="flex "><Link className="hover:text-black" to="/listofngo">
+         
+          <button className="h-screen w-full shadow-lg hover:shadow-slate-300 bg-no-repeat bg-cover " style={{backgroundImage: "url()"}} >
+              
+           
+              <p className="text-3xl">Donors and Companies in nearly every country in the world. 
+                This crowdfunding platform helps organizations access the tools, training, and support they need to be more effective and help their communities.
+                 This is a secure and trusted platform to raise money.</p>
+          </button>
+          </Link>
+          <hr />
+          <div className="">
+          <button className="h-screen  shadow-lg  hover:shadow-slate-300 bg-no-repeat bg-cover "  style={{backgroundImage: "url(https://www.palomar.edu/sociology/wp-content/uploads/sites/108/2016/02/iStock_000082683071_Medium-volunteer-photo.jpg)"}}>
+           
+            <p className="justify-start text-2xl">Individuals who willingly devote their time, effort, and skill are known as volunteers.
+
+Promotion and raising funds, administrative responsibilities, and team initiatives are all examples of these responsibilities.
+crowdfunding platforms can make an enormous difference for the social sector entrepreneurs and their poverty alleviation, healthcare, and other activities on the ground. In fact, it has been proven globally that NGO fundraising gets a huge shot when it is done through crowdfunding platforms.</p>
+          </button>
+          </Link>
+          </div>
+          <button className="h-screen  shadow-lg hover:shadow-slate-300 bg-no-repeat bg-cover" style={{backgroundImage: "url(https://www.threegirlsmedia.com/wp-content/uploads/2017/07/3G.BloggingDosAndDonts.7.23.2017.jpg)"}} > 
+             
+             
+              <p className=" text-xl ">The Internet is valuable when extending the reach of your Non-for-Profit Organization. Developing your online presence can share your Nonprofit's mission with those beyond your local community and provide information about your cause.
+Building an online presence might sound daunting, at first. And trust me to some extent, it is. Maintaining a blog page will help you accomplish this daunting task. Determine what goal you’d like to accomplish through your blog. Then, develop content accordingly that pushes you along that path.</p>
+
+          </button>
+          </Link>
+          </div>
+          </div>
+          </div> */}
+          <div>
+    
+        
+    <div className='w-full h-screen flex'>
+        <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
+        <div className='w-full h-[550px] hidden md:block'>
+                <img className='w-full h-full' src="https://i.cdn-sc.com/MediaVaultImages/94_thumbnail.jpg" alt="/" />
+            </div>
+            <div className='p-4 flex flex-col justify-around'>
+                <form>
+                <Link className="hover:text-black" to="/listofngo">
+                    
+                       <h1 className='text-5xl italic text-center'>Fundraisers</h1>  <p className="text-3xl justify-between">Donors and Companies in nearly every country in the world. 
+                This crowdfunding platform helps organizations access the tools, training, and support they need to be more effective and help their communities.
+                 This is a secure and trusted platform to raise money.</p>
+                 </Link>
+                    
+                </form>
+             </div>
+        </div>
+    </div>
+    <div className='w-full h-screen flex'>
+        <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
+            <div className='p-4 flex flex-col justify-around'>
+                <form>
+                <Link className="hover:text-black" to="/booking">
+                <h1 className='text-5xl italic text-center'>Volunteers</h1>  <p className="text-2xl justify-between">Individuals who willingly devote their time, effort, and skill are known as volunteers.
+
+Promotion and raising funds, administrative responsibilities, and team initiatives are all examples of these responsibilities.
+crowdfunding platforms can make an enormous difference for the social sector entrepreneurs and their poverty alleviation, healthcare, and other activities on the ground. In fact, it has been proven globally that NGO fundraising gets a huge shot when it is done through crowdfunding platforms.</p>
+                   
+                   </Link>
+                </form>
+             </div>
+             <div className='w-full h-[550px] hidden md:block'>
+                <img className='w-full h-full' src="https://www.palomar.edu/sociology/wp-content/uploads/sites/108/2016/02/iStock_000082683071_Medium-volunteer-photo.jpg" alt="/" />
+            </div> 
+             
+        </div>
+    </div>
+    <div className='w-full h-screen flex'>
+        <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
+        <div className='w-full h-[550px] hidden md:block'>
+                <img className='w-full h-full' src="https://www.threegirlsmedia.com/wp-content/uploads/2017/07/3G.BloggingDosAndDonts.7.23.2017.jpg" alt="/" />
+            </div>
+            <div className='p-4 flex flex-col justify-around'>
+                <form>
+                <Link className="hover:text-black" to="/blogging">
+                <h1 className='text-5xl italic text-center'>Blogging</h1>  <p className="text-2xl justify-between">The Internet is valuable when extending the reach of your Non-for-Profit Organization. Developing your online presence can share your Nonprofit's mission with those beyond your local community and provide information about your cause.
+Building an online presence might sound daunting, at first. Maintaining a blog page will help you accomplish this daunting task. Determine what goal you’d like to accomplish through your blog. Then, develop content accordingly that pushes you along that path.</p>
+                   
+                  </Link>
+                   
+                </form>
+             </div>
+        </div>
+    </div>
+   
+      </div>
+     <div className="">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d60287.64290025739!2d72.8244526641613!3d19.196177144550433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sngos%20near%20me!5e0!3m2!1sen!2sin!4v1647134361752!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+
+   
+
+    </div>
+  )
+}
+
+export default New

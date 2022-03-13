@@ -1,5 +1,5 @@
 import Signin from './components/Signin'
-import NgoSignin from './components/NgoSignin'
+import Ngosignin from './components/Ngosignin'
 import Signup from "./components/Signup";
 import Ngosignup from "./components/Ngosignup";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -22,7 +22,7 @@ function App() {
         
       <Routes>
           <Route path="/signin" element={<Signin/>}/>
-          <Route path="/ngosignin" element={<NgoSignin/>}/>
+          <Route path="/ngosignin" element={<Ngosignin/>}/>
           <Route path="/ngosignup" element={<Ngosignup/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/" element={<Home/>}/>

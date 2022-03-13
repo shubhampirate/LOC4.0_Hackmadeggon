@@ -1,10 +1,7 @@
 import Signin from './components/Signin'
-import NgoSignin from './components/NgoSignin'
 import Signup from "./components/Signup";
-import Ngosignup from "./components/Ngosignup";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import New from "./components/New"
-import Ngonew from "./components/Ngonew"
 import Booking from "./components/Booking"
 import Payment from "./components/Payment"
 import Home from './components/Home ';
@@ -22,8 +19,6 @@ function App() {
         
       <Routes>
           <Route path="/signin" element={<Signin/>}/>
-          <Route path="/ngosignin" element={<NgoSignin/>}/>
-          <Route path="/ngosignup" element={<Ngosignup/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="/new" element={<New/>}/>

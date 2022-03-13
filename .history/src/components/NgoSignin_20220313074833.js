@@ -32,7 +32,7 @@ function Ngosignin() {
                 
               />
             </div>
-            <Link to="/ngonew"><button className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white">
+            <Link to="/new"><button className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white">
               Sign In
             </button></Link>
             <p className="flex items-center mt-2">

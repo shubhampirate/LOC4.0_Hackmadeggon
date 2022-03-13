@@ -21,7 +21,7 @@ function Ngosignin() {
               </p>
             </div>
             <div className="flex flex-col mb-4">
-              <label>Ngo Email</label>
+              <label>Email</label>
               <input className="border relative bg-gray-100 p-2" type="email"  />
             </div>
             <div className="flex flex-col ">
@@ -32,7 +32,7 @@ function Ngosignin() {
                 
               />
             </div>
-            <Link to="/ngonew"><button className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white">
+            <Link to="/new"><button className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white">
               Sign In
             </button></Link>
             <p className="flex items-center mt-2">
