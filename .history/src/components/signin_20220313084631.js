@@ -51,11 +51,11 @@ function Signin() {
             </div>
             <div className="flex flex-col mb-4">
               <label>Email</label>
-              <input name="email"   className="border relative bg-gray-100 p-2" type="email"  />
+              <input name="email"  onchange={onChange} className="border relative bg-gray-100 p-2" type="email"  />
             </div>
             <div className="flex flex-col ">
               <label>Password</label>
-              <input 
+              <input onchange={onChange}
                 className="border relative bg-gray-100 p-2"
                 type="password" name="password"
                 

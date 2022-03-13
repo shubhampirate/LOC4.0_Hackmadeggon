@@ -4,39 +4,11 @@ import { AiFillFacebook } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import logo from "./logo.jpeg"
-function Signin() {
-    // const [email, setEmail] = useState("")
-    // const [password, setPassword] = useState("")
-    // const [auth, setAuth] = useState()
-    // const navigate=useNavigate();
-    
-    // const onChange=(e)=>{
-    //   setEmail({...email,[e.target.name]:e.target.value})
-    //   setPassword({...password,[e.target.value]:e.target.value})
-    // }
-    // const handleSubmit=(event) => {
-    //   event.preventDefault();
-    //   var formdata= new FormData();
-    //   formdata.append("email",email)
-    //   formdata.append("password",password)
-    //   fetch("http://127.0.0.1:8000/login/",{
-    //     method: "POST",
-    //     body: formdata,
-    //   })
-    //   .then((response)=>{response.json();
-    //   console.log(response.Token)})
-    //   .then((result) =>{ 
-    //     result.token ? navigate("/new"):navigate("/signup")
-    //     localStorage.setItem("token", result.token)
-    //   })
-    //   .catch((error) =>{
-    //     console.log(error);
-    //     alert("Invalid Credentials")
-    //   })
-    // }
+function Ngosignin() {
 
     return (
     <div>
+        
       <div className="relative w-full h-screen bg-zinc-900">
         <div className="flex justify-center items-center h-full">
           <form className="max-w-[400px] w-full mx-auto bg-white p-8">
@@ -50,21 +22,20 @@ function Signin() {
               </p>
             </div>
             <div className="flex flex-col mb-4">
-              <label>Email</label>
-              <input name="email"   className="border relative bg-gray-100 p-2" type="email"  />
+              <label>Ngo Email</label>
+              <input className="border relative bg-gray-100 p-2" type="email"  />
             </div>
             <div className="flex flex-col ">
               <label>Password</label>
-              <input 
+              <input
                 className="border relative bg-gray-100 p-2"
-                type="password" name="password"
+                type="password"
                 
               />
             </div>
-<Link to="/new">            <button className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white" >
+            <Link to="/ngonew"><button className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-900 relative text-white">
               Sign In
-            </button>
-            </Link>
+            </button></Link>
             <p className="flex items-center mt-2">
               <input className="mr-2" type="checkbox" />
               Remember Me
@@ -82,5 +53,5 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default Ngosignin;
 /**/
