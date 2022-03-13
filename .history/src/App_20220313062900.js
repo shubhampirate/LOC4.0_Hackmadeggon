@@ -9,14 +9,14 @@ import BookingSlot from "./components/BookingSlot"
 import Listofngo from "./components/Listofngo"
 import PaymentSuccess from './components/PaymentSuccess';
 import Blogging from './components/Blogging'
-
+import Map from "./components/Map"
 //import Sidebar from "./components/Sidebar"
 function App() {
   return <div>
       <div >
       
       <Router>
-        
+            <Map/>
       <Routes>
           <Route path="/signin" element={<Signin/>}/>
           <Route path="/signup" element={<Signup/>}/>

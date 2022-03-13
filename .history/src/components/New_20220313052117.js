@@ -12,9 +12,9 @@ function New() {
         <div className=" text-2xl w-full height-7xl flex">
         <div className="h-13 "><Link to="/new"> <img classname="h-10" src={logo}/> </Link></div>
           </div>
-         <div className="pr-10">
+         <div className="">
           <Link to="/">
-            <button className="w-28 py-2 mt-8 bg-black hover:bg-gray-600 relative text-white rounded-lg "> Logout</button>
+            <button className="w-28 py-2 mt-8 bg-black hover:bg-indigo-900 relative text-white rounded-lg"> Logout</button>
           </Link>
           </div>
          
@@ -30,7 +30,7 @@ function New() {
         <div  className="flex   ">
           <div className="flex "><Link className="hover:text-black" to="/listofngo">
          
-          <button className="h-screen w-full shadow-lg hover:shadow-slate-300 bg-no-repeat bg-cover " style={{backgroundImage: "url()"}} >
+          <button className="h-screen w-full shadow-lg hover:shadow-slate-300 bg-no-repeat bg-cover " style={{backgroundImage: "url(https://i.cdn-sc.com/MediaVaultImages/94_thumbnail.jpg)"}} >
               
            
               <p className="text-3xl">Donors and Companies in nearly every country in the world. 
@@ -66,7 +66,7 @@ Building an online presence might sound daunting, at first. And trust me to some
     <div className='w-full h-screen flex'>
         <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
         <div className='w-full h-[550px] hidden md:block'>
-                <img className='w-full h-full' src="https://i.cdn-sc.com/MediaVaultImages/94_thumbnail.jpg" alt="/" />
+                <img className='w-full h-full' src="https://www.accountingweb.com/sites/default/files/seminar.jpg" alt="/" />
             </div>
             <div className='p-4 flex flex-col justify-around'>
                 <form>
@@ -95,7 +95,7 @@ crowdfunding platforms can make an enormous difference for the social sector ent
                 </form>
              </div>
              <div className='w-full h-[550px] hidden md:block'>
-                <img className='w-full h-full' src="https://www.palomar.edu/sociology/wp-content/uploads/sites/108/2016/02/iStock_000082683071_Medium-volunteer-photo.jpg" alt="/" />
+                <img className='w-full h-full' src="https://indianorphanage.com/io/wp-content/uploads/2015/07/orphanage-vocational-training.jpg" alt="/" />
             </div> 
              
         </div>
@@ -103,7 +103,7 @@ crowdfunding platforms can make an enormous difference for the social sector ent
     <div className='w-full h-screen flex'>
         <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]'>
         <div className='w-full h-[550px] hidden md:block'>
-                <img className='w-full h-full' src="https://www.threegirlsmedia.com/wp-content/uploads/2017/07/3G.BloggingDosAndDonts.7.23.2017.jpg" alt="/" />
+                <img className='w-full h-full' src="https://helpagecanada.ca/wp-content/uploads/2020/04/Awareness-drive-2_FRlogo.jpg" alt="/" />
             </div>
             <div className='p-4 flex flex-col justify-around'>
                 <form>
@@ -119,7 +119,6 @@ Building an online presence might sound daunting, at first. Maintaining a blog p
     </div>
    
       </div>
-     
 
    
 

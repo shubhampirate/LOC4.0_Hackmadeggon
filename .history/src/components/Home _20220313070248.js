@@ -12,11 +12,11 @@ function Home () {
         <div className="text-5xl hidden sm:block">BLOG  </div> */}
           <div className="h-15"><img classname="h-10" src={logo}/></div>
      </div>
-     <div className="flex pr-20 align-top">
-     <button className=" text-2xl w-28 py-2 mt-2  mb-5 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10"><Link to="/signin">User Signin </Link></button>
+     <div className="flex pr-10">
+     <button className=" text-2xl w-28 py-2 mt-8 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10"><Link to="/signin">User Signin </Link></button>
      <div className="pl-5 pr-5">
-     <button className=" text-2xl w-28 py-2 pl-2 mt-2  mb-5 bg-black hover:bg-gray-600 hover:text-white  text-white rounded-lg text-opacity-10"><Link to="/signin">User SignUp </Link></button>
-     </div><button className="text-2xl w-28 py-2 pl-2 mt-2  mb-5 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10 "><Link to="/signup">Ngo Signup</Link></button>
+     <button className=" text-2xl w-28 py-2 pl-2 mt-8 bg-black hover:bg-gray-600 hover:text-white  text-white rounded-lg text-opacity-10"><Link to="/signin">User SignUp </Link></button>
+     </div><button className="text-2xl w-28 py-2 pl-2 mt-8 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10 "><Link to="/signup">Ngo Signup</Link></button>
      </div>
      </div>
      <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>
@@ -49,7 +49,8 @@ To enhance transparency between all the stakeholders of non profit organisation 
 To make nonprofit organisations sustainable and help grow their reach to donors as wells as beneficiaries.</p>
       
     </div>
-   
+    <div className="row"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d60287.64290025739!2d72.8244526641613!3d19.196177144550433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sngos%20near%20me!5e0!3m2!1sen!2sin!4v1647134361752!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
    
     <div className='bg-black text-white text-2xl'>
 

@@ -16,7 +16,7 @@ function App() {
       <div >
       
       <Router>
-        
+            <Map/>
       <Routes>
           <Route path="/signin" element={<Signin/>}/>
           <Route path="/signup" element={<Signup/>}/>

@@ -12,11 +12,11 @@ function Home () {
         <div className="text-5xl hidden sm:block">BLOG  </div> */}
           <div className="h-15"><img classname="h-10" src={logo}/></div>
      </div>
-     <div className="flex pr-20 align-top">
-     <button className=" text-2xl w-28 py-2 mt-2  mb-5 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10"><Link to="/signin">User Signin </Link></button>
+     <div className="flex pr-10 align-top">
+     <button className=" text-2xl w-28 py-2 mt-1  mb-1 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10"><Link to="/signin">User Signin </Link></button>
      <div className="pl-5 pr-5">
-     <button className=" text-2xl w-28 py-2 pl-2 mt-2  mb-5 bg-black hover:bg-gray-600 hover:text-white  text-white rounded-lg text-opacity-10"><Link to="/signin">User SignUp </Link></button>
-     </div><button className="text-2xl w-28 py-2 pl-2 mt-2  mb-5 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10 "><Link to="/signup">Ngo Signup</Link></button>
+     <button className=" text-2xl w-28 py-2 pl-2 mt-2  mb-1 bg-black hover:bg-gray-600 hover:text-white  text-white rounded-lg text-opacity-10"><Link to="/signin">User SignUp </Link></button>
+     </div><button className="text-2xl w-28 py-2 pl-2 mt-1  mb-1 bg-black hover:bg-gray-600 hover:text-white relative text-white rounded-lg text-opacity-10 "><Link to="/signup">Ngo Signup</Link></button>
      </div>
      </div>
      <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>
