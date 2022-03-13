@@ -42,7 +42,6 @@ function Listofngo() {
        </div> */}
        <br />
        <br />
-       
 
         <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>
         <div className='hidden sm:block'>
@@ -56,11 +55,11 @@ function Listofngo() {
                     </div>
 
         <div className=' flex flex-col justify-between'>
-          <h1 className='text-5xl text-left'>SERVICES </h1><hr />
-          <div className="text-3xl ">Education</div><hr />
-          <div className="text-3xl">Health</div> <hr />
-          <div className="text-3xl">Children</div> <hr />
-          <div className="text-3xl">Education</div> <hr/>
+          <h1 className='text-5xl text-left'>|SERVICES </h1><hr />
+          <div className="text-3xl ">|Education</div><hr />
+          <div className="text-3xl">|Health</div> <hr />
+          <div className="text-3xl">|Children</div> <hr />
+          <div className="text-3xl">|Education</div> <hr/>
           <div className="text-3xl">Children</div> <hr />
     
        

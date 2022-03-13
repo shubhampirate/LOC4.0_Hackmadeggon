@@ -42,7 +42,33 @@ function Listofngo() {
        </div> */}
        <br />
        <br />
-       
+       <table class="table-auto w-full">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <hr />
+      <th>Artist</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+      <td>Malcolm Lockyer</td>
+      
+    </tr>
+    <tr>
+      <td>Witchy Woman</td>
+      <td>The Eagles</td>
+      
+    </tr>
+    <tr>
+      <td>Shining Star</td>
+      <td>Earth, Wind, and Fire</td>
+      
+    </tr>
+  </tbody>
+</table>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>
         <div className='hidden sm:block'>

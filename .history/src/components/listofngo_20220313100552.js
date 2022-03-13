@@ -42,7 +42,6 @@ function Listofngo() {
        </div> */}
        <br />
        <br />
-       
 
         <div className='grid grid-cols-1 sm:grid-cols-2 h-auto w-full'>
         <div className='hidden sm:block'>
